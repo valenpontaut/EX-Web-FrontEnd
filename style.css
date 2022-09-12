@@ -27,6 +27,7 @@ a.header-nav-button-green:hover{
 /*carousel*/
 .corousel-img{
     max-height: 40rem;
+    opacity: 0.5;
 }
 .carousel-text{
     top: 60%;
@@ -49,10 +50,20 @@ a.carousel-btn-green:hover{
 }
 
 /*cards*/
+.title-cards-2{
+    font-size: 2rem;
+}
+.cards-specialization{
+    font-size: 0.9rem;
+}
+.card-title{
+    font-size: 1.6rem;
+}
+
 /*description*/
 /*forms*/
 
 /*FOOTER*/
 footer{
-    background-color: #1e4f6d;
+    background-color: #1b3e51;
 }
