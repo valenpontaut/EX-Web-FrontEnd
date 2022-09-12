@@ -1,3 +1,5 @@
+
+/*HEADER*/
 header{
     background-color: #353a40;
 }
@@ -8,9 +10,49 @@ header{
     color: white;
     font-size: 1.5rem;
 }
-a.header-nav-button-green, a.header-nav-button-green:hover{
+a.header-nav-button{
+    color: #777;
+}
+a.header-nav-button:hover{
+    color: rgba(255, 255, 255, 0.476);
+}
+a.header-nav-button-green{
     color: #27a743;
 }
+a.header-nav-button-green:hover{
+    color: #1b8f34;
+}
+
+/*SECTION*/
+/*carousel*/
+.corousel-img{
+    max-height: 40rem;
+}
+.carousel-text{
+    top: 60%;
+    left: 100%;
+    transform: translate(-110%, -50%);
+}
+a.carousel-btn{
+    color: white;
+    border: white 1px solid;
+}
+a.carousel-btn:hover{
+    background-color: rgba(255, 255, 255, 0.195);
+}
+a.carousel-btn-green{
+    background-color: #27a743;
+    border: none;
+}
+a.carousel-btn-green:hover{
+    background-color: #1b8f34;
+}
+
+/*cards*/
+/*description*/
+/*forms*/
+
+/*FOOTER*/
 footer{
     background-color: #1e4f6d;
 }

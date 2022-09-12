@@ -22,16 +22,34 @@
             </a>
         </div>
         <div class="col-8 position-relative d-flex justify-content-center m-0 p-0">
-            <a class="text-decoration-none text-light px-2 py-4" href="#">La conferencia</a>
-            <a class="text-decoration-none text-muted px-2 py-4" href="#">Los creadores</a>
-            <a class="text-decoration-none text-muted px-2 py-4" href="#">El lugar y la fecha</a>
-            <a class="text-decoration-none text-muted px-2 py-4" href="#">Conviértete en orador</a>
+            <a class="header-nav-button text-decoration-none text-light px-2 py-4" href="#">La conferencia</a>
+            <a class="header-nav-button text-decoration-none px-2 py-4" href="#">Los creadores</a>
+            <a class="header-nav-button text-decoration-none px-2 py-4" href="#">El lugar y la fecha</a>
+            <a class="header-nav-button text-decoration-none px-2 py-4" href="#">Conviértete en orador</a>
             <a class="header-nav-button-green text-decoration-none px-2 py-4" href="#">Comprar tickets</a>
         </div>
     </header>
     <section>
-        <div class="container carrousel">
-
+        <div class="container-fluid carousel bg-dark m-0 p-0">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner ">
+                  <div class="carousel-item active">
+                    <img src="img/ba1.jpg" class="col-12 corousel-img d-block bg-opacity-70" alt="Palacio de las aguas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/ba2.jpg" class="col-12 corousel-img d-block" alt="Puente de la mujer">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/ba3.jpg" class="col-12 corousel-img d-block" alt="Obelisco">
+                  </div>
+                </div>
+              </div>
+            <div class="carousel-text col-5 position-absolute text-light text-end fw-bold">
+                <h1>Conf Bs As</h1>
+                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                <a class="carousel-btn btn " href="#">Quiero ser orador</a>
+                <a class="carousel-btn carousel-btn-green btn " href="#">Comprar tickets</a>
+            </div>
         </div>
         <div class="container cards">
 
@@ -43,7 +61,7 @@
 
         </div>
     </section>
-    <footer class="fixed-bottom">
+    <footer>
         <div class="position-relative d-flex justify-content-center m-0 p-0">
             <a class="text-decoration-none text-light p-4" href="#">Preguntas frecuentes</a>
             <a class="text-decoration-none text-light p-4" href="#">Contáctanos</a>
