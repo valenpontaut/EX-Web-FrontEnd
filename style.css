@@ -1,6 +1,3 @@
-*{
-    border: blue 1px solid;
-}
 header{
     background-color: #353a40;
 }
@@ -13,4 +10,7 @@ header{
 }
 a.header-nav-button-green, a.header-nav-button-green:hover{
     color: #27a743;
+}
+footer{
+    background-color: #1e4f6d;
 }
