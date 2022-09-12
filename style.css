@@ -11,10 +11,6 @@ header{
     color: white;
     font-size: 1.5rem;
 }
-a.header-nav-button:hover{
-    font-weight: bold;
-    color: white;
-}
 a.header-nav-button-green, a.header-nav-button-green:hover{
     color: #27a743;
 }
