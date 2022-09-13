@@ -77,8 +77,17 @@ a.description-btn:hover{
 }
 
 /*forms*/
+button.form-btn,button.form-btn:focus{
+    background-color: #96c93e;
+    border: none;
+
+}
+button.form-btn:hover{
+    background-color: #a2d151;
+    border: none;
+}
 
 /*FOOTER*/
 footer{
-    background-color: #1b3e51;
+    background-color: #1d4054;
 }
