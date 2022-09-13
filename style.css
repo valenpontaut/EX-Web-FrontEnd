@@ -17,10 +17,10 @@ a.header-nav-button:hover{
     color: rgba(255, 255, 255, 0.476);
 }
 a.header-nav-button-green{
-    color: #27a743;
+    color: #1b8f34;
 }
 a.header-nav-button-green:hover{
-    color: #1b8f34;
+    color: #27a743;
 }
 
 /*SECTION*/
@@ -42,11 +42,11 @@ a.carousel-btn:hover{
     background-color: rgba(255, 255, 255, 0.195);
 }
 a.carousel-btn-green{
-    background-color: #27a743;
+    background-color: #1b8f34;
     border: none;
 }
 a.carousel-btn-green:hover{
-    background-color: #1b8f34;
+    background-color: #27a743;
 }
 
 /*cards*/
@@ -61,6 +61,21 @@ a.carousel-btn-green:hover{
 }
 
 /*description*/
+.description-img{
+    border: white solid 1px;
+}
+.description-div{
+    background-color: #353a40;
+    border: white solid 1px;
+}
+a.description-btn{
+    color: white;
+    border: white 1px solid;
+}
+a.description-btn:hover{
+    background-color: rgba(255, 255, 255, 0.195);
+}
+
 /*forms*/
 
 /*FOOTER*/
