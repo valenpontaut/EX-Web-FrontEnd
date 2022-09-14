@@ -14,33 +14,51 @@
     <title>Conf Bs As</title>
 </head>
 <body>
-    <header class="navbar sticky-top m-0 p-0 row container-fluid">
-        <div class="col-4 position-relative d-flex justify-content-center m-0 p-0">
-            <a class="navbar-brand m-0 p-0" href="#">
-                <img src="img/codoacodo.png" alt="Logo" class="header-logo d-inline-block">
-                <span class="header-title">Conf Bs As</span>
+    <header class="sticky-top m-0 p-0">       
+        <nav class="navbar navbar-expand-lg m-0 p-0">
+          <div class="container-fluid header-navbar m-0 p-0">
+            <a class="col-lg-4 position-relative d-flex justify-content-center navbar-brand m-0 p-0" href="#">
+              <img src="img/codoacodo.png" alt="Logo" class="header-logo">
+              <span class="header-title my-auto">Conf Bs As</span>
             </a>
-        </div>
-        <div class="col-8 position-relative d-flex justify-content-center m-0 p-0">
-            <a class="header-nav-button text-decoration-none text-light px-2 py-4" href="#">La conferencia</a>
-            <a class="header-nav-button text-decoration-none px-2 py-4" href="#oradores">Los oradores</a>
-            <a class="header-nav-button text-decoration-none px-2 py-4" href="#lugar-y-fecha">El lugar y la fecha</a>
-            <a class="header-nav-button text-decoration-none px-2 py-4" href="#conviertete-en-orador">Conviértete en orador</a>
-            <a class="header-nav-button-green text-decoration-none px-2 py-4" href="#">Comprar tickets</a>
-        </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-3 me-lg-0 container-fluid position-relative d-flex justify-content-center mb-2 mb-lg-0 text-end ">
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="#">La conferencia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-button" href="#oradores">Los oradores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-button" href="#lugar-y-fecha">El lugar y la fecha</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-button" href="#conviertete-en-orador">Conviértete en orador</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-button-green" href="#">Comprar tickets</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
     </header>
     <section>
         <div class="carousel container-fluid bg-dark m-0 p-0">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner ">
                   <div class="carousel-item active">
-                    <img src="img/ba1.jpg" class="col-12 corousel-img d-block bg-opacity-70" alt="Palacio de las aguas">
+                    <img src="img/ba1.jpg" class="col-12 carousel-img d-block bg-opacity-70" alt="Palacio de las aguas">
                   </div>
                   <div class="carousel-item">
-                    <img src="img/ba2.jpg" class="col-12 corousel-img d-block" alt="Puente de la mujer">
+                    <img src="img/ba2.jpg" class="col-12 carousel-img d-block" alt="Puente de la mujer">
                   </div>
                   <div class="carousel-item">
-                    <img src="img/ba3.jpg" class="col-12 corousel-img d-block" alt="Obelisco">
+                    <img src="img/ba3.jpg" class="col-12 carousel-img d-block" alt="Obelisco">
                   </div>
                 </div>
               </div>
@@ -101,13 +119,15 @@
                   </div>
             </div>
         </div>
-        <div class="description container-fluid d-flex mx-0 my-4 p-0">
-            <a name="lugar-y-fecha"></a>
-            <img src="img/honolulu.jpg" alt="Honolulu" class="description-img col-6">
-            <div class="description-div text-light p-3">
+        <div class="description row row-cols-1 row-cols-lg-2 mx-0 my-4 p-0">
+            <div class="col p-0">
+              <a name="lugar-y-fecha"></a>
+              <img src="img/honolulu.jpg" alt="Honolulu" class="description-img w-100">
+            </div>
+            <div class="description-div col text-light p-3">
                 <h2 class="fw-semibold">Bs As - Octubre</h2>
                 <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
-                <a href="#" class="btn description-btn">Conocé más</a>
+                <a href="#" class="description-btn btn text-light">Conocé más</a>
             </div>
         </div>
         <div class="form container-fluid">
@@ -116,32 +136,29 @@
                 <p class="title-cards-1 m-0">CONVIÉRTETE EN UN</p>
                 <p class="title-cards-2 m-0 p-0 fw-semibold">ORADOR</p>
                 <p class="m-2">Anótate como orador para dar una <abbr title="El formato Ignite consiste en una presentación de la idea central de un proyecto o visión en cinco minutos">charla ignite</abbr>. Cuéntanos de qué quieres hablar!</p>
-                <div class="container-fluid d-flex col-6 p-0">
-                    <input class="form-control me-3" type="text" placeholder="Nombre" aria-label="default input example">
-                    <input class="form-control ms-3" type="text" placeholder="Apellido" aria-label="default input example">
+                <div class="row row-cols-1 row-cols-lg-2 col-6 p-0 m-auto">
+                    <div class="col p-0 pe-lg-2"><input class="form-control " type="text" placeholder="Nombre" aria-label="default input example"></div>
+                    <div class="col p-0 ps-lg-2 mt-3 mt-lg-0"><input class="form-control" type="text" placeholder="Apellido" aria-label="default input example"></div>
                 </div>
-                <div class="container-fluid col-6 p-0">
+                <div class="col-6 p-0 mx-auto">
                     <textarea class="form-control mt-3" placeholder="Sobre qué quieres hablar?" aria-label="With textarea"></textarea>
                     <div class="form-text text-start">Recuerda incluir un título para tu charla</div>
                 </div>
-                <div class="">
+                <div>
                     <button type="submit" class="btn form-btn text-light col-6 my-4">Enviar</button>
                 </div>
-                
-
-                
             </div>
         </div>
     </section>
     <footer>
-        <div class="position-relative d-flex justify-content-center m-0 p-0">
-            <a class="text-decoration-none text-light p-4" href="#">Preguntas frecuentes</a>
-            <a class="text-decoration-none text-light p-4" href="#">Contáctanos</a>
-            <a class="text-decoration-none text-light p-4" href="#">Prensa</a>
-            <a class="text-decoration-none text-light p-4" href="#">Conferencias</a>
-            <a class="text-decoration-none text-light p-4" href="#">Términos y condiciones</a>
-            <a class="text-decoration-none text-light p-4" href="#">Privacidad</a>
-            <a class="text-decoration-none text-light p-4" href="#">Estudiantes</a>
+        <div class="row row-cols-1 row-cols-lg-12 text-center m-0 p-0 py-4">
+            <a class="col col-lg-2 text-decoration-none text-light m-auto" href="#">Preguntas frecuentes</a>
+            <a class="col col-lg-1 text-decoration-none text-light m-auto" href="#">Contáctanos</a>
+            <a class="col col-lg-1 text-decoration-none text-light m-auto" href="#">Prensa</a>
+            <a class="col col-lg-1 text-decoration-none text-light m-auto" href="#">Conferencias</a>
+            <a class="col col-lg-2 text-decoration-none text-light m-auto" href="#">Términos y condiciones</a>
+            <a class="col col-lg-1 text-decoration-none text-light m-auto" href="#">Privacidad</a>
+            <a class="col col-lg-1 text-decoration-none text-light m-auto" href="#">Estudiantes</a>
         </div>
     </footer>
 </body>
