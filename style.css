@@ -16,17 +16,20 @@ a.header-nav-button{
 a.header-nav-button:hover{
     color: rgba(255, 255, 255, 0.476);
 }
+a.header-nav-button:focus{
+    color: white;
+}
 a.header-nav-button-green{
     color: #1b8f34;
 }
-a.header-nav-button-green:hover{
+a.header-nav-button-green:hover,a.header-nav-button-green:focus{
     color: #27a743;
 }
 
 /*SECTION*/
 /*carousel*/
 .carousel-img{
-    max-height: 40rem;
+    height: 35rem;
     opacity: 0.5;
 }
 .carousel-text{
@@ -41,7 +44,7 @@ a.carousel-btn{
 a.carousel-btn:hover{
     background-color: rgba(255, 255, 255, 0.195);
 }
-a.carousel-btn-green{
+a.carousel-btn-green,a.carousel-btn-green:focus{
     background-color: #1b8f34;
     border: none;
 }
@@ -83,6 +86,9 @@ button.form-btn,button.form-btn:focus{
 button.form-btn:hover{
     background-color: #a2d151;
     border: none;
+}
+.form-textarea::placeholder{
+    font-size: 1.3rem;
 }
 
 /*FOOTER*/
