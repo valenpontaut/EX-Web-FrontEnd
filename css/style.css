@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/*--INDEX--*/
+
 /*HEADER*/
 .header-navbar{
     background-color: #353a40;
@@ -26,7 +28,8 @@ a.header-nav-button:focus{
 a.header-nav-button-green{
     color: #1b8f34;
 }
-a.header-nav-button-green:hover,a.header-nav-button-green:focus{
+a.header-nav-button-green:hover,
+a.header-nav-button-green:focus{
     color: #27a743;
 }
 
@@ -48,7 +51,8 @@ a.carousel-btn{
 a.carousel-btn:hover{
     background-color: rgba(255, 255, 255, 0.195);
 }
-a.carousel-btn-green,a.carousel-btn-green:focus{
+a.carousel-btn-green,
+a.carousel-btn-green:focus{
     background-color: #1b8f34;
     border: none;
 }
@@ -83,7 +87,8 @@ a.description-btn:hover{
 }
 
 /*forms*/
-button.form-btn,button.form-btn:focus{
+button.form-btn,
+button.form-btn:focus{
     background-color: #96c93e;
     border: none;
 }
@@ -98,4 +103,29 @@ button.form-btn:hover{
 /*FOOTER*/
 footer{
     background-color: #1d4054;
+}
+
+/*--BUY_TICKETS--*/
+
+/*SECTION*/
+/*buy_tickets cards*/
+.buy_tickets__section__cards{
+    display: flex;
+    justify-content: center;
+}
+.buy_tickets__section__cards__student,
+.buy_tickets__section__cards__trainee,
+.buy_tickets__section__cards__junior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buy_tickets__section__cards__student{
+    border: 1.5px rgb(78, 122, 226) solid;
+}
+.buy_tickets__section__cards__trainee{
+    border: 1.5px rgb(55, 175, 151) solid;
+}
+.buy_tickets__section__cards__junior{
+    border: 1.5px rgb(255, 208, 0) solid;
 }
