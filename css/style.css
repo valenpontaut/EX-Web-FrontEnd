@@ -129,3 +129,17 @@ footer{
 .buy_tickets__section__cards__junior{
     border: 1.5px rgb(255, 208, 0) solid;
 }
+.buy_tickets__section__cards__title{
+    font-size: 1.2rem;
+}
+.buy_tickets__section__cards__lighttext{
+    font-size: 0.8rem;
+}
+.buy_tickets__section__form__total{
+    background-color: #cce5ff;
+    display: flex;
+    color: #2e6c90;
+}
+.btn-success, .btn-success:hover, .btn-success:active, .btn-success:visited {
+    background-color: #27a743 !important;
+}

@@ -47,28 +47,64 @@
         </nav>
 
     </header>
-    <section>
-        <div class="buy_tickets__section__cards my-3">
-            <div class="buy_tickets__section__cards__student p-2 mx-2">
-                <p class="my-2 fw-bold">Estudiante</p>
+    <section class="buy_tickets__section">
+        <div class="buy_tickets__section__cards row row-cols-lg-3 row-cols-1 container-fluid text-center mx-0 my-3 p-0">
+            <div class="buy_tickets__section__cards__student col col-10 col-lg-2 py-4 mx-1 my-1">
+                <p class="buy_tickets__section__cards__title fw-bold">Estudiante</p>
                 <p class="my-2 ">Tienen un descuento</p>
                 <p class="my-2 fw-bolder">80%</p>
-                <p class="my-2 fw-light">* presentar documentación</p>
+                <p class="buy_tickets__section__cards__lighttext fw-light m-0 p-0">* presentar documentación</p>
             </div>
-            <div class="buy_tickets__section__cards__trainee p-2 mx-2">
-                <p class="my-2 fw-bold">Trainee</p>
+            <div class="buy_tickets__section__cards__trainee col col-10 col-lg-2 py-4 mx-1 my-1">
+                <p class="buy_tickets__section__cards__title fw-bold">Trainee</p>
                 <p class="my-2 ">Tienen un descuento</p>
                 <p class="my-2 fw-bolder">50%</p>
-                <p class="my-2 fw-light">* presentar documentación</p>
+                <p class="buy_tickets__section__cards__lighttext fw-light m-0 p-0">* presentar documentación</p>
             </div>
-            <div class="buy_tickets__section__cards__junior p-2 mx-2">
-                <p class="my-2 fw-bold">Junior</p>
+            <div class="col col-10 col-lg-2 buy_tickets__section__cards__junior py-4 mx-1 my-1">
+                <p class="buy_tickets__section__cards__title fw-bold">Junior</p>
                 <p class="my-2 ">Tienen un descuento</p>
                 <p class="my-2 fw-bolder">15%</p>
-                <p class="my-2 fw-light">* presentar documentación</p>
+                <p class="buy_tickets__section__cards__lighttext fw-light m-0 p-0">* presentar documentación</p>
             </div>
         </div>
-        
+        <div class="buy_tickets__section__form container-fluid text-center">
+          <p class="title-cards-1 m-0">VENTA</p>
+          <p class="title-cards-2 m-0 p-0 fw-semibold">VALOR DE TICKET $200</p>
+          <div class="row row-cols-1 row-cols-lg-2 col-md-6 p-0 m-auto mt-3">
+            <div class="col p-0 pe-lg-2"><input class="form-control " type="text" placeholder="Nombre" aria-label="default input example"></div>
+            <div class="col p-0 ps-lg-2 mt-3 mt-lg-0"><input class="form-control" type="text" placeholder="Apellido" aria-label="default input example"></div>
+          </div>
+          <div class="col-md-6 mx-auto">
+            <div><input class="form-control mt-3" type="email" placeholder="Correo"></div>
+          </div>
+          <div class="row row-cols-2 col-md-6 p-0 m-auto mt-2">
+            <div class="buy_tickets__section__form__quantity col p-0 pe-lg-2">
+              <div class="text-start ps-2"><label for="">Cantidad</label></div>
+              <input class="form-control mt-2" type="number" min="0">
+            </div>
+            <div class="buy_tickets__section__form__category col p-0 ps-2 mt-lg-0">
+              <div class="text-start ps-2"><label for="">Categoría</label></div>
+              <select class="form-select mt-2" id="inputGroupSelect01">
+                <option selected></option>
+                <option value="student">Estudiante</option>
+                <option value="trainee">Trainee</option>
+                <option value="junior">Junior</option>
+              </select>
+            </div>
+          </div>
+          <div class="buy_tickets__section__form__total rounded-2 col-md-6 mx-auto mt-5 p-3 fw-semibold">
+            <p class="m-0">Total a pagar: $</p>
+          </div>
+          <div class="buy_tickets__section__form__button row row-cols-2 col-md-6 p-0 m-auto my-5">
+            <div class="buy_tickets__section__button__delete col d-grid gap-2 col-6 mx-auto pe-2 ps-0">
+              <button type="button" class="btn btn-success fw-semibold p-2">Borrar</button>
+            </div>
+            <div class="buy_tickets__section__button__summary col d-grid gap-2 col-6 mx-auto ps-2 pe-0 ">
+              <button type="button" class="buy_tickets__section__button__summarybtn btn btn-success fw-semibold p-2">Resumen</button>
+            </div>
+          </div>
+        </div>
     </section>
     <footer>
         <div class="row row-cols-1 row-cols-lg-12 text-center m-0 p-0 py-3">
