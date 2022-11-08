@@ -46,10 +46,5 @@ function summaryBtn() {
 }
 
 function deleteBtn(){
-    name_input.value = "";
-    surname_input.value = "";
-    email_input.value = "";
-    tickets_amount.value = "";
-    discount_select.value = "";
     total_pay.innerHTML = `Total a pagar: $`;
 }
