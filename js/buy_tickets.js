@@ -4,12 +4,10 @@ let email_input = document.getElementById("email_input");
 let tickets_amount = document.getElementById("tickets_amount");
 let discount_select = document.getElementById("discount_select");
 let total_pay = document.getElementById("total_pay");
-
 let total;
-let error = 0;
 let disc;
 
-function discount(d,error){
+function discount(d){
     if (d === "student"){
         disc = 0.2;
     }
@@ -22,9 +20,6 @@ function discount(d,error){
     else if (d === "none"){
         disc = 1;
     }
-    else {
-        error = "No se ha ingresado categoría";
-    }
 }
 
 function totalPay(amount){
@@ -32,11 +27,22 @@ function totalPay(amount){
     total_pay.innerHTML = `Total a pagar: $${total}`;
 }
 
+function errorMessage(n,s,e,t,d){
+    if (n == "" || s == "" || e == "" || t == "" || d == ""){
+        let error = "No se han completado todos los campos";
+        total_pay.innerHTML = `${error}`;
+    }
+}
+
 function summaryBtn() {
+    let nam = name_input.value;
+    let surname = surname_input.value;
+    let email = email_input.value;
     let ticketsAmount = tickets_amount.value;
     let discountSelect = discount_select.value;
-    discount(discountSelect,error);
+    discount(discountSelect);
     totalPay(ticketsAmount);
+    errorMessage(nam,surname,email,ticketsAmount,discountSelect);
 }
 
 function deleteBtn(){
