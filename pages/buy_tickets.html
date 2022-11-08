@@ -81,27 +81,28 @@
           <div class="row row-cols-2 col-md-6 p-0 m-auto mt-2">
             <div class="buy_tickets__section__form__quantity col p-0 pe-lg-2">
               <div class="text-start ps-2"><label for="">Cantidad</label></div>
-              <input class="form-control mt-2" type="number" min="0">
+              <input class="form-control mt-2" id="tickets_amount" type="number" min="0">
             </div>
             <div class="buy_tickets__section__form__category col p-0 ps-2 mt-lg-0">
               <div class="text-start ps-2"><label for="">Categoría</label></div>
-              <select class="form-select mt-2" id="inputGroupSelect01">
+              <select class="form-select mt-2" id="discount_select">
                 <option selected></option>
                 <option value="student">Estudiante</option>
                 <option value="trainee">Trainee</option>
                 <option value="junior">Junior</option>
+                <option value="none">Ninguno de los anteriores</option>
               </select>
             </div>
           </div>
           <div class="buy_tickets__section__form__total rounded-2 col-md-6 mx-auto mt-5 p-3 fw-semibold">
-            <p class="m-0">Total a pagar: $</p>
+            <p class="m-0" id="total_pay">Total a pagar: $</p>
           </div>
           <div class="buy_tickets__section__form__button row row-cols-2 col-md-6 p-0 m-auto my-5">
             <div class="buy_tickets__section__button__delete col d-grid gap-2 col-6 mx-auto pe-2 ps-0">
-              <button type="button" class="btn btn-success fw-semibold p-2">Borrar</button>
+              <button type="button" class="btn btn-success fw-semibold p-2" id="delete_btn" onclick="deleteBtn()">Borrar</button>
             </div>
             <div class="buy_tickets__section__button__summary col d-grid gap-2 col-6 mx-auto ps-2 pe-0 ">
-              <button type="button" class="buy_tickets__section__button__summarybtn btn btn-success fw-semibold p-2">Resumen</button>
+              <button type="button" class="buy_tickets__section__button__summarybtn btn btn-success fw-semibold p-2" id="summary_btn" onclick="summaryBtn()">Resumen</button>
             </div>
           </div>
         </div>
@@ -117,3 +118,5 @@
             <a class="col col-lg-1 text-decoration-none text-light m-auto" href="#">Estudiantes</a>
         </div>
     </footer>
+    <script src="../js/buy_tickets.js"></script>
+</body>
