@@ -109,6 +109,9 @@ footer{
 
 /*SECTION*/
 /*buy_tickets cards*/
+.buy_tickets__section{
+    height: calc(100vh - 72px - 80px - 16px);
+}
 .buy_tickets__section__cards{
     display: flex;
     justify-content: center;
